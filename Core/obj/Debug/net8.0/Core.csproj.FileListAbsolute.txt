@@ -5,7 +5,6 @@ C:\Users\kubek\RiderProjects\laby_zaliczenie\Core\obj\Debug\net8.0\Core.Generate
 C:\Users\kubek\RiderProjects\laby_zaliczenie\Core\obj\Debug\net8.0\Core.AssemblyInfoInputs.cache
 C:\Users\kubek\RiderProjects\laby_zaliczenie\Core\obj\Debug\net8.0\Core.AssemblyInfo.cs
 C:\Users\kubek\RiderProjects\laby_zaliczenie\Core\obj\Debug\net8.0\Core.csproj.CoreCompileInputs.cache
-C:\Users\kubek\RiderProjects\laby_zaliczenie\Core\obj\Debug\net8.0\Core.sourcelink.json
 C:\Users\kubek\RiderProjects\laby_zaliczenie\Core\obj\Debug\net8.0\Core.dll
 C:\Users\kubek\RiderProjects\laby_zaliczenie\Core\obj\Debug\net8.0\refint\Core.dll
 C:\Users\kubek\RiderProjects\laby_zaliczenie\Core\obj\Debug\net8.0\Core.pdb

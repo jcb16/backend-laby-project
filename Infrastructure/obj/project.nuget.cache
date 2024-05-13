@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "s5mIQY55ufzQHEhf0+tXY8NJJnzaJagAEw0GK5DSNhfGC4Za3VVFfsUD61Xgspw1f4VgQsDJ2HNoylLHEXjt5A==",
+  "dgSpecHash": "7MAFOR+Mwc8/gHylBlH/mHE0gTDv9lp5BC6mp6w1en3kZL6vc4DKXsbr3teiCpUcM9d2fG0OooqqRVreVUQ+9w==",
   "success": true,
   "projectFilePath": "C:\\Users\\kubek\\RiderProjects\\laby_zaliczenie\\Infrastructure\\Infrastructure.csproj",
   "expectedPackageFiles": [
@@ -29,7 +29,7 @@
     "C:\\Users\\kubek\\.nuget\\packages\\microsoft.extensions.primitives\\9.0.0-preview.3.24172.9\\microsoft.extensions.primitives.9.0.0-preview.3.24172.9.nupkg.sha512",
     "C:\\Users\\kubek\\.nuget\\packages\\mono.texttemplating\\3.0.0-preview-0052-g5d0f76c785\\mono.texttemplating.3.0.0-preview-0052-g5d0f76c785.nupkg.sha512",
     "C:\\Users\\kubek\\.nuget\\packages\\npgsql\\8.0.2\\npgsql.8.0.2.nupkg.sha512",
-    "C:\\Users\\kubek\\.nuget\\packages\\npgsql.entityframeworkcore.postgresql\\8.0.2\\npgsql.entityframeworkcore.postgresql.8.0.2.nupkg.sha512",
+    "C:\\Users\\kubek\\.nuget\\packages\\npgsql.entityframeworkcore.postgresql\\9.0.0-preview.3\\npgsql.entityframeworkcore.postgresql.9.0.0-preview.3.nupkg.sha512",
     "C:\\Users\\kubek\\.nuget\\packages\\system.codedom\\6.0.0\\system.codedom.6.0.0.nupkg.sha512",
     "C:\\Users\\kubek\\.nuget\\packages\\system.collections.immutable\\7.0.0\\system.collections.immutable.7.0.0.nupkg.sha512",
     "C:\\Users\\kubek\\.nuget\\packages\\system.composition\\7.0.0\\system.composition.7.0.0.nupkg.sha512",

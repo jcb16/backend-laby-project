@@ -4,7 +4,6 @@ C:\Users\kubek\RiderProjects\laby_zaliczenie\WebApi\obj\Debug\net8.0\WebApi.Asse
 C:\Users\kubek\RiderProjects\laby_zaliczenie\WebApi\obj\Debug\net8.0\WebApi.AssemblyInfo.cs
 C:\Users\kubek\RiderProjects\laby_zaliczenie\WebApi\obj\Debug\net8.0\WebApi.csproj.CoreCompileInputs.cache
 C:\Users\kubek\RiderProjects\laby_zaliczenie\WebApi\obj\Debug\net8.0\WebApi.MvcApplicationPartsAssemblyInfo.cache
-C:\Users\kubek\RiderProjects\laby_zaliczenie\WebApi\obj\Debug\net8.0\WebApi.sourcelink.json
 C:\Users\kubek\RiderProjects\laby_zaliczenie\WebApi\bin\Debug\net8.0\appsettings.Development.json
 C:\Users\kubek\RiderProjects\laby_zaliczenie\WebApi\bin\Debug\net8.0\appsettings.json
 C:\Users\kubek\RiderProjects\laby_zaliczenie\WebApi\bin\Debug\net8.0\WebApi.exe
@@ -117,3 +116,6 @@ C:\Users\kubek\RiderProjects\laby_zaliczenie\WebApi\bin\Debug\net8.0\Core.dll
 C:\Users\kubek\RiderProjects\laby_zaliczenie\WebApi\bin\Debug\net8.0\Infrastructure.dll
 C:\Users\kubek\RiderProjects\laby_zaliczenie\WebApi\bin\Debug\net8.0\Infrastructure.pdb
 C:\Users\kubek\RiderProjects\laby_zaliczenie\WebApi\bin\Debug\net8.0\Core.pdb
+C:\Users\kubek\RiderProjects\laby_zaliczenie\WebApi\bin\Debug\net8.0\System.Text.Encodings.Web.dll
+C:\Users\kubek\RiderProjects\laby_zaliczenie\WebApi\bin\Debug\net8.0\System.Text.Json.dll
+C:\Users\kubek\RiderProjects\laby_zaliczenie\WebApi\bin\Debug\net8.0\runtimes\browser\lib\net8.0\System.Text.Encodings.Web.dll

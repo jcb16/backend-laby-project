@@ -4,6 +4,7 @@ using Infrastructure;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 
+
 namespace WebApi.Controllers;
 
 [Route("api/[controller]")]
@@ -11,7 +12,7 @@ namespace WebApi.Controllers;
 public class UniversityController : ControllerBase
 {
         private readonly UniversityContext _context;
-
+        
         public UniversityController(UniversityContext context)
         {
             _context = context;
@@ -21,10 +22,10 @@ public class UniversityController : ControllerBase
         public async Task<ActionResult<PagedResult<University>>> GetUniversities(int pageNumber = 1, int pageSize = 3)
         {
             var universities = _context.Universities.AsQueryable();
-
+        
             var totalCount = await universities.CountAsync();
             var items = await universities.Skip((pageNumber - 1) * pageSize).Take(pageSize).ToListAsync();
-
+        
             var result = new PagedResult<University>
             {
                 Items = items,
@@ -32,7 +33,8 @@ public class UniversityController : ControllerBase
                 PageSize = pageSize,
                 PageNumber = pageNumber
             };
-
+        
             return result;
         }
+        
 }
