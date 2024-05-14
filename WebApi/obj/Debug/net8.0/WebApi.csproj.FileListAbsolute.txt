@@ -119,3 +119,4 @@ C:\Users\kubek\RiderProjects\laby_zaliczenie\WebApi\bin\Debug\net8.0\Core.pdb
 C:\Users\kubek\RiderProjects\laby_zaliczenie\WebApi\bin\Debug\net8.0\System.Text.Encodings.Web.dll
 C:\Users\kubek\RiderProjects\laby_zaliczenie\WebApi\bin\Debug\net8.0\System.Text.Json.dll
 C:\Users\kubek\RiderProjects\laby_zaliczenie\WebApi\bin\Debug\net8.0\runtimes\browser\lib\net8.0\System.Text.Encodings.Web.dll
+C:\Users\kubek\RiderProjects\laby_zaliczenie\WebApi\obj\Debug\net8.0\WebApi.sourcelink.json
