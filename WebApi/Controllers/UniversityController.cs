@@ -78,6 +78,68 @@ public class UniversityController : ControllerBase
         
         
         
+        //zad1
+        [HttpGet("{id}")]
+        public async Task<ActionResult<object>> GetUniversity(int id, [FromQuery] int year)
+        {
+            var university = await _context.Universities
+                .Where(u => u.Id == id)
+                .Select(u => new
+                {
+                    universityId = u.Id,
+                    universityName = u.UniversityName
+                })
+                .FirstOrDefaultAsync();
+
+            if (university == null)
+            {
+                return NotFound();
+            }
+
+            var universityYear = await _context.UniversityYears
+                .Where(u => u.UniversityId == id && u.Year == year)
+                .Select(u => new
+                {
+                    numberOfStudents = u.NumStudents,
+                    staffRatio = u.StudentStaffRatio,
+                    numberOfInternationalStudents = u.PctInternationalStudents,
+                    numberOfFemaleStudents = u.PctFemaleStudents
+                })
+                .FirstOrDefaultAsync();
+
+            if (universityYear == null)
+            {
+                return NotFound();
+            }
+
+            var result = new
+            {
+                universityId = university.universityId,
+                universityName = university.universityName,
+                numberOfStudents = universityYear.numberOfStudents,
+                staffRatio = universityYear.staffRatio,
+                numberOfInternationalStudents = universityYear.numberOfInternationalStudents,
+                numberOfFemaleStudents = universityYear.numberOfFemaleStudents
+            };
+
+            return result;
+        }
+        
+        
+        //zad2
+        [HttpGet("GetUniversityRankingYear/{id}")]
+        public async Task<ActionResult<UniversityRankingYear>> GetUniversityRankingYear(int id)
+        {
+            var universityRankingYear = await _context.UniversityRankingYears.FindAsync(id);
+
+            if (universityRankingYear == null)
+            {
+                return NotFound();
+            }
+
+            return universityRankingYear;
+        }        
+        
         [HttpPost("{id}/scores")]
         public async Task<IActionResult> AddScore(int id, [FromBody] ScoreInputModel input)
         {
@@ -85,20 +147,20 @@ public class UniversityController : ControllerBase
             {
                 return BadRequest(ModelState);
             }
-
+        
             var university = await _context.Universities.FindAsync(id);
             if (university == null)
             {
                 return NotFound();
             }
-
+        
             var existingScore = await _context.UniversityRankingYears
                 .FirstOrDefaultAsync(s => s.UniversityId == id && s.Year == input.Year && s.RankingCriteriaId == input.RankingCriteriaId);
             if (existingScore != null)
             {
-                return Conflict("Score for the specified university, year and criteria already exists.");
+                return Conflict("Wynik dla tego uniwersytetu, roku i kryterium już istnieje");
             }
-
+        
             var newScore = new UniversityRankingYear
             {
                 UniversityId = id,
@@ -108,8 +170,13 @@ public class UniversityController : ControllerBase
             };
             _context.UniversityRankingYears.Add(newScore);
             await _context.SaveChangesAsync();
-
+        
             return Ok(newScore);
         }
+
+        //
+        //
+        //
+        
         
 }
